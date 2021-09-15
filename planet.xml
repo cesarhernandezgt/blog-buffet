@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blogs>
+
+  <blog>
+    <author>Tomitribe</author>
+    <picture>pictures/tomitribe.png</picture>
+    <feed>https://www.tomitribe.com/blog/category/jakarta-ee/feed/</feed>
+  </blog>
+
+</blogs>
+
