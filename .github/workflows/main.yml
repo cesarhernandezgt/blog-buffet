@@ -38,7 +38,7 @@ jobs:
         run: |
           echo URL to scan
           echo ${{ steps.getxml.outputs.info }}
-          apt-get -y install libxml2-utils
+          sudo apt-get -y install libxml2-utils
           xmllint -version
           
           
