@@ -40,7 +40,7 @@ jobs:
           echo ${{ steps.getxml.outputs.info }}
           sudo apt-get -y install libxml2-utils
           xmllint -version
-          syncNow.sh
+          sudo ./syncNow.sh
           cat blog.md
           
           
