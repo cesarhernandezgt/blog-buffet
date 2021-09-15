@@ -1,1 +1,1 @@
-= Auto Generated Blog aggregator \n\n
+# Auto Generated Blog aggregator

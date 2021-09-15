@@ -4,7 +4,7 @@
 
 let itemsCount=$(xmllint --xpath 'count(//blogs/blog)' planet.xml)
 
-echo "= Auto Generated Blog aggregator \n\n" > blog.md
+echo "# Auto Generated Blog aggregator \n\n" > blog.md
 
 for (( i=1; i <= $itemsCount; i++ )); do 
 
@@ -28,7 +28,7 @@ for (( i=1; i <= $itemsCount; i++ )); do
         DATE=$(xmllint --xpath '//item['$j']/pubDate/text()' temp.xml) 
     
 
-      echo "== $TITLE"             >> blog.md
+      echo "## $TITLE"             >> blog.md
       echo "  - Author: $AUTHOR"   >> blog.md
       echo "  - $LINK "            >> blog.md
       echo "  - $DATE \n\n"      >> blog.md
