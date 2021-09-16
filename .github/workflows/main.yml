@@ -51,6 +51,7 @@ jobs:
           title: Update blog.md from dev branch
           body: Automated Pull Request
           branch: dev
+          base: main
 
       - name: Check outputs
         run: |
