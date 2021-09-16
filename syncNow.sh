@@ -28,9 +28,10 @@ for (( i=1; i <= $itemsCount; i++ )); do
         DATE=$(xmllint --xpath '//item['$j']/pubDate/text()' temp.xml) 
     
 
-      echo "## $TITLE"             >> blog.md
+      # echo "## $TITLE"             >> blog.md
+      echo "## [$TITLE]($LINK)"    >> blog.md        
       echo "  - Author: $AUTHOR"   >> blog.md
-      echo "  - $LINK "            >> blog.md
+      # echo "  - $LINK "            >> blog.md
       echo "  - $DATE "            >> blog.md
       
     done
