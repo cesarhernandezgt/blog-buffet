@@ -50,7 +50,7 @@ jobs:
           commit-message: update blog.md
           title: Update blog.md from dev branch
           body: Automated Pull Request
-          branch: main
+          branch: dev
 
       - name: Check outputs
         run: |
