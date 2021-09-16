@@ -1,3 +1,1 @@
 # Auto Generated Blog aggregator
-
-
