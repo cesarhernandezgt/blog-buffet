@@ -42,6 +42,20 @@ jobs:
           xmllint -version
           sudo ./syncNow.sh
           cat blog.md
+      
+      - name: Create Pull Request to main
+        id: cpr
+        uses: peter-evans/create-pull-request@v3
+        with:
+          commit-message: update blog.md
+          title: Update blog.md from dev branch
+          body: Automated Pull Request
+          branch: main
+
+      - name: Check outputs
+        run: |
+          echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
+          echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
           
           
           
