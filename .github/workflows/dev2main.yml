@@ -49,8 +49,7 @@ jobs:
         with:
           commit-message: update blog.md
           title: Update blog.md from dev branch
-          body: Automated Pull Request
-          branch: robot-branch
+          body: Automated Pull Request          
           base: dev
 
       - name: Check outputs
