@@ -7,8 +7,11 @@
     <feed>https://www.bychkov.name/jee-rss.xml</feed>
   </blog>
   
-
-  
+  <blog>
+    <author>Tomitribe</author>
+    <picture>pictures/tomitribe.png</picture>
+    <feed>https://www.tomitribe.com/blog/category/jakarta-ee/feed/</feed>
+  </blog>
 
 
 </blogs>
